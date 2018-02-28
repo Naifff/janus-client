@@ -1,0 +1,96 @@
+
+texturePack1.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 2
+  size: 1280, 720
+  orig: 1280, 720
+  offset: 0, 0
+  index: -1
+clouds
+  rotate: false
+  xy: 1284, 2
+  size: 256, 384
+  orig: 256, 384
+  offset: 0, 0
+  index: -1
+menuBtn
+  rotate: false
+  xy: 2, 724
+  size: 240, 80
+  orig: 240, 80
+  offset: 0, 0
+  index: -1
+btn2
+  rotate: false
+  xy: 2, 806
+  size: 180, 80
+  orig: 180, 80
+  offset: 0, 0
+  index: -1
+btn
+  rotate: false
+  xy: 2, 888
+  size: 180, 80
+  orig: 180, 80
+  offset: 0, 0
+  index: -1
+bars
+  rotate: false
+  xy: 244, 724
+  size: 80, 72
+  orig: 80, 72
+  offset: 0, 0
+  index: -1
+tankBody
+  rotate: false
+  xy: 2, 970
+  size: 83, 49
+  orig: 83, 49
+  offset: 0, 0
+  index: -1
+tankTrack
+  rotate: false
+  xy: 87, 970
+  size: 74, 35
+  orig: 74, 35
+  offset: 0, 0
+  index: -1
+target
+  rotate: false
+  xy: 184, 806
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+star16
+  rotate: false
+  xy: 218, 806
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+ammo
+  rotate: false
+  xy: 184, 840
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tankTurret
+  rotate: false
+  xy: 202, 840
+  size: 40, 12
+  orig: 40, 12
+  offset: 0, 0
+  index: -1
+grass
+  rotate: false
+  xy: 236, 806
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1

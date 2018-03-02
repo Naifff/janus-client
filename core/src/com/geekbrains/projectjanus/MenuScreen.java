@@ -12,10 +12,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 
-/**
- * Created by WoW on 27.02.2018.
- */
-
 public class MenuScreen implements Screen {
     private SpriteBatch batch;
 
@@ -75,7 +71,7 @@ public class MenuScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(textureRegionBackground, 0, 0);
-        font96.draw(batch, "Tanks Game", 0, 320, 1280, 1, false);
+        font96.draw(batch, "Janus Project", 0, 320, 1280, 1, false);
         batch.end();
         stage.draw();
     }

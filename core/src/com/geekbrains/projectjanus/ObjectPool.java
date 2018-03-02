@@ -3,10 +3,6 @@ package com.geekbrains.projectjanus;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by WoW on 02.03.2018.
- */
-
 public abstract class ObjectPool <T extends Poolable> {
     protected List<T> activeList;
     protected List<T> freeList;

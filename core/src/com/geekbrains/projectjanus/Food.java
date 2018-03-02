@@ -2,20 +2,17 @@ package com.geekbrains.projectjanus;
 
 import com.badlogic.gdx.math.Vector2;
 
-/**
- * Created by WoW on 02.03.2018.
- */
-
-public class Food implements Poolable{
+public class Food implements Poolable {
 
     private Vector2 position;
     private boolean active;
+
     public Vector2 getPosition() {
         return position;
     }
 
     @Override
-        public boolean isActive() {
+    public boolean isActive() {
         return active;
     }
 

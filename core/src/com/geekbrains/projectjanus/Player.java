@@ -58,14 +58,46 @@ public class Player {
 
     public void update(float dt) {
 
+//        if (ai) {
+//            tempTime += dt;
+//            if (tempTime > time) {
+//                tempTime = 0f;
+//                tmp.x = MathUtils.random(-1, 1);
+//                tmp.y = MathUtils.random(-1, 1);
+//                velosity = tmp.nor().scl(speed);
+//            }
+//            position.x += velosity.x * dt;
+//            position.y += velosity.y * dt;
+//            if (position.x < -game.world) {
+//                position.x = -game.world;
+//                velosity.x *= -1;
+//            }
+//            if (position.y < -game.world) {
+//                position.y = -game.world;
+//                velosity.y *= -1;
+//            }
+//            if (position.x > game.world - textureBase.getWidth() * hp / 100) {
+//                position.x = game.world - textureBase.getWidth() * hp / 100;
+//                velosity.x *= -1;
+//            }
+//            if (position.y > game.world - textureBase.getHeight() * hp / 100) {
+//                position.y = game.world - textureBase.getHeight() * hp / 100;
+//                velosity.y *= -1;
+//            }
+//        }
+
         if (ai) {
-            tempTime += dt;
-            if (tempTime > time) {
-                tempTime = 0f;
-                tmp.x = MathUtils.random(-1, 1);
-                tmp.y = MathUtils.random(-1, 1);
-                velosity = tmp.nor().scl(speed);
-            }
+
+            tmp.x=game.getPlayers().get(0).position.x;
+            tmp.y=game.getPlayers().get(0).position.y;
+
+//            tempTime += dt;
+//            if (tempTime > time) {
+//                tempTime = 0f;
+//                tmp.x = MathUtils.random(-1, 1);
+//                tmp.y = MathUtils.random(-1, 1);
+                velosity = tmp.sub(position).rotate(270).nor().scl(speed);
+//            }
             position.x += velosity.x * dt;
             position.y += velosity.y * dt;
             if (position.x < -game.world) {
@@ -85,6 +117,9 @@ public class Player {
                 velosity.y *= -1;
             }
         }
+
+
+
 //        Player aim = null;
 //
 //        do {

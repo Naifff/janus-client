@@ -51,7 +51,7 @@ public class GameScreen implements Screen {
     private boolean goUp = false;
     private boolean goDown = false;
     private Texture border;
-    private static final int BOTS_COUNT = 5;
+    private static final int BOTS_COUNT = 1;
     protected Camera camera;
 
     public GameScreen(SpriteBatch batch) {
@@ -105,9 +105,14 @@ public class GameScreen implements Screen {
         for (int i = 0; i < 50; i++) {
             foodEmitter.setup(MathUtils.random(-world, world), MathUtils.random(-world, world));
         }
-        players.add(new Player(this, new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 1024)), false));
+//        players.add(new Player(this, new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 1024)), false));
+//        for (int i = 0; i < BOTS_COUNT; i++) {
+//            players.add(new Player(this, new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 1024)), true));
+//        }
+
+        players.add(new Player(this, new Vector2(0, 0), false));
         for (int i = 0; i < BOTS_COUNT; i++) {
-            players.add(new Player(this, new Vector2(MathUtils.random(0, 1280), MathUtils.random(0, 1024)), true));
+            players.add(new Player(this, new Vector2(400, 400), true));
         }
 
     }
